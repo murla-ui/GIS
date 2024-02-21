@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Showcase</title>
+    <title>Link Showcase with Thumbnails</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,17 +26,30 @@
             color: #333;
             margin-bottom: 20px;
         }
-        a {
-            display: inline-block;
+        .link {
             margin: 10px;
-            padding: 10px 15px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .thumbnail {
+            width: 120px;
+            height: 80px;
+            background-color: #ddd;
+            display: block;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            background-size: cover;
+            background-position: center;
+        }
+        .link-text {
+            display: block;
             background-color: #007bff;
             color: white;
-            text-decoration: none;
+            padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-        a:hover {
+        .link-text:hover {
             background-color: #0056b3;
         }
     </style>
@@ -45,10 +58,22 @@
 
 <div class="container">
     <h1>Project Links</h1>
-    <a href="https://murla-ui.github.io/AkmolaCP/" target="_blank">Akmola CP</a>
-    <a href="https://murla-ui.github.io/AstanaAgloCP/" target="_blank">Astana Aglo CP</a>
-    <a href="https://murla-ui.github.io/AstanaAgloACHex/" target="_blank">Astana Aglo ACHex</a>
-    <a href="https://murla-ui.github.io/AstanaAgloACHex/" target="_blank">Astana Aglo ACHex (Duplicate)</a>
+    <a href="https://murla-ui.github.io/AkmolaCP/" class="link" target="_blank">
+        <div class="thumbnail" style="background-image: url('your-thumbnail-url-here');"></div>
+        <span class="link-text">Akmola CP</span>
+    </a>
+    <a href="https://murla-ui.github.io/AstanaAgloCP/" class="link" target="_blank">
+        <div class="thumbnail" style="background-image: url('your-thumbnail-url-here');"></div>
+        <span class="link-text">Astana Aglo CP</span>
+    </a>
+    <a href="https://murla-ui.github.io/AstanaAgloACHex/" class="link" target="_blank">
+        <div class="thumbnail" style="background-image: url('your-thumbnail-url-here');"></div>
+        <span class="link-text">Astana Aglo ACHex</span>
+    </a>
+    <a href="https://murla-ui.github.io/AstanaAgloSkaterHex/" class="link" target="_blank">
+        <div class="thumbnail" style="background-image: url('your-thumbnail-url-here');"></div>
+        <span class="link-text">Astana Aglo SkaterHex</span>
+    </a>
 </div>
 
 </body>
